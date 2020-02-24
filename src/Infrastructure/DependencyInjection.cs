@@ -67,6 +67,7 @@ namespace MyCleanApp.Infrastructure
                 services.AddTransient<IDateTime, DateTimeService>();
                 //services.AddTransient<IIdentityService, IdentityService>();
                 services.AddTransient<ICsvFileBuilder, CsvFileBuilder>();
+                services.AddTransient<ILicensingService>(ls => new LicensingService(configuration["Data:ConnectionString"]));
             }
 
             services.AddAuthentication()

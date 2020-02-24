@@ -44,7 +44,7 @@ namespace MyCleanApp.Application.Common.Behaviours
                 //var userId = _currentUserService.UserId;
                 //var userName = await _identityService.GetUserNameAsync(userId);
 
-                _logger.LogWarning("MyCleanApp Long Running Request: {Name} ({ElapsedMilliseconds} milliseconds) {@Request}",
+                _logger.LogWarning("Long Running Request: {Name} ({ElapsedMilliseconds} milliseconds) {@Request}",
                     requestName, elapsedMilliseconds, 
                     //userId, userName, 
                     request);

@@ -38,7 +38,7 @@ namespace MyCleanApp.WebUI.IntegrationTests
 
                     //services.AddScoped<ICurrentUserService, TestCurrentUserService>();
                     services.AddScoped<IDateTime, TestDateTimeService>();
-                    services.AddScoped<IIdentityService, TestIdentityService>();
+                    //services.AddScoped<IIdentityService, TestIdentityService>();
 
                     var sp = services.BuildServiceProvider();
 

@@ -27,7 +27,7 @@ namespace MyCleanApp.Application.Common.Behaviours
             //var userId = _currentUserService.UserId;
             //var userName = await _identityService.GetUserNameAsync(userId);
 
-            _logger.LogInformation("MyCleanApp Request: {Name} {@Request}",
+            _logger.LogInformation("Request: {Name} {@Request}",
                 requestName, 
                 //userId, 
                 //userName ,
